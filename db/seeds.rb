@@ -22,8 +22,8 @@ end
 # Questions and Answers
 20.times do
   question = Question.create(title: FFaker::HipsterIpsum.sentence.gsub(/\.$/, "?"),
-    private: FFaker::Boolean.random, user: users.sample)
+    private: FFaker::Boolean.random, asker: users.sample)
   (1 + rand(3)).times do
-    question.answers.create(body: FFaker::HipsterIpsum.sentence, user: users.sample)
+    question.answers.create(body: FFaker::HipsterIpsum.sentence, answerer: users.sample)
   end
 end
