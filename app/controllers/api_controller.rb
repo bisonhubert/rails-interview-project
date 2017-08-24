@@ -5,9 +5,9 @@ class ApiController < ApplicationController
   private
 
   def authenticate_tenant
-    tenant_token = request.headers['X-USER-TOKEN']
+    tenant_token = request.headers['token']
     if tenant_token
-      tenant = Tenant.find_by_token(tenant_token)
+      tenant = Tenant.find_by(api_key: tenant_token)
       if tenant.nil?
         return unauthorize
       end

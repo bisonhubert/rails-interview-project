@@ -42,3 +42,9 @@ You should see this same information.
 ## Submitting your project
 
 Fork this repo and give us access to your fork.  If you need to add any additional instructions to the README please put them at the very top of that file and mention.  Expect to discuss your design decisions during the interview.
+
+## Submission
+
+To curl the list of questions, use the following command:
+`curl -H "token:<token>" http://localhost:3000/api/v1/questions`
+Be sure to replace <token> with a valid tenant token.
