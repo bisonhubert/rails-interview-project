@@ -55,4 +55,4 @@ curl -H "token:<token>" http://localhost:3000/api/v1/questions
 
 ### Running the Tests
 To run the unit and integration tests, run:
-```be rake rspec` to run the tests```
+```be rake rspec to run the tests```
