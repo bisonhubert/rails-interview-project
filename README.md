@@ -54,7 +54,7 @@ curl -H "token:<token>" http://localhost:3000/api/v1/questions
 
 
 ### Running the Tests
-To run the tests, first install rspec:
+To run the tests, first install rspec and select no when prompted to overwrite `spec_helper` and `rails_helper`:
 ```
 rails g rspec:install
 ```
