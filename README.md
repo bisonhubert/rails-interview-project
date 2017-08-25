@@ -47,10 +47,12 @@ Fork this repo and give us access to your fork.  If you need to add any addition
 
 ### cURLing the API
 To request the list of questions with a valid token, run:
-`curl -H "token:<*token>" http://localhost:3000/api/v1/questions`
+```
+curl -H "token:<token>" http://localhost:3000/api/v1/questions
+```
 *Be sure to replace <token> with a valid tenant token.
 
 
 ### Running the Tests
 To run the unit and integration tests, run:
-`be rake rspec` to run the tests
+```be rake rspec` to run the tests```
